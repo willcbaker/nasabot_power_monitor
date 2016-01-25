@@ -1,0 +1,8 @@
+<launch>
+
+  <node pkg="power_monitor" type="power_monitor_GUI.py" name="power_monitor_GUI" output="screen">
+    <param name="num_cells" value="3" />
+  </node>
+  <node pkg="rosserial_python" type="serial_node.py" name="ros_serial" respawn="true" output="screen"/>
+
+</launch>
